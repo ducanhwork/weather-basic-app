@@ -1,0 +1,42 @@
+
+.container{
+    position: absolute;
+    z-index: 1001;
+}
+.weather-info {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 300px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    background-color: color(from rgb(223, 249, 243) srgb r g b);
+}
+
+.weather-info.show {
+    opacity: 1;
+}
+
+.weather-info img {
+    display: block;
+    margin-top: 10px;
+}
+
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #17a2b8;
+    color: #fff;
+}
+
+.input-group input:focus {
+    border-color: #17a2b8;
+    box-shadow: 0 0 10px rgba(23, 162, 184, 0.5);
+}
+.background{
+    position: absolute;
+    opacity: 0.2;
+    z-index: 0;
+}
